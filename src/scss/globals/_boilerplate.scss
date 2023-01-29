@@ -1,0 +1,17 @@
+@use '../util' as *;
+
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    font-family: $font;
+    background-color: var(--background-color);
+    color: var(--text-color);
+
+}

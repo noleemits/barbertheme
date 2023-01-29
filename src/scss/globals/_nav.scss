@@ -1,0 +1,29 @@
+.nav{
+
+    &__list-li{
+    list-style: none;
+    font-family: Oswald,sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-right: 30px;
+    }
+    .btn{
+    text-align: center;
+    background: #eb1616;
+    color: #fff;
+    text-transform: uppercase;
+    border: 2px solid #eb1616;
+    font-family: Oswald,sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 12px 20px;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        color: #D31313;
+        background: none;
+    }
+ }
+}

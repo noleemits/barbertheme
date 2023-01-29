@@ -4,30 +4,45 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
   <title>Barbercrop</title>
 </head>
 <body>
   <!-- Navigation menu -->
-  <header class="container-lg d-flex ">
-    <nav class="headerheader_header__wrapper d-flex justify-content-between">
-      <a class="header_header__logo">
-        <img src="images/design/barbershop_logo.png" alt="Logo" srcset="">
-      </a>
-      <div class="header__header_nav-container">
-        <ul class="header__header__nav_links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Service</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Page</a></li>
+  <header class="container flex flex__justify-between flex__align-center">
+    <a class="header_header__logo">
+      <img src="images/content/logo.png" alt="Logo" srcset="" width="100px">
+    </a>     
+    <nav class="nav flex flex__justify-between flex__align-center">
+        <ul class="nav__list flex flex__justify-between">
+          <li class="nav__list-li"><a href="#">Home</a></li>
+          <li class="nav__list-li"><a href="#">About</a></li>
+          <li class="nav__list-li"><a href="#">Service</a></li>
+          <li class="nav__list-li"><a href="#">Blog</a></li>
+          <li class="nav__list-li"><a href="#">Contact</a></li>
+          <li class="nav__list-li"><a href="#">Page</a></li>
         </ul>
-  <a href="#" class="header__header_btn btn ">Book now</a>
-      </div>
-
+        <a href="#" class="header__header_btn btn ">Book now</a> 
       </nav>
   </header>
-
-  
+<section>
+  <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    ...
+  </div>
+</section>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>
 </html>

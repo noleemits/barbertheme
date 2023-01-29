@@ -1,0 +1,19 @@
+.flex{
+    display: flex;
+ &__justify-between{
+     justify-content: space-between;
+ }
+    &__align-center{
+        align-items: center;
+    }
+    &__direction-column{
+        flex-direction: column;
+    }
+
+    &__justify-around{
+        justify-content: space-around;
+    }
+    &__no-wrap{
+        flex-wrap: nowrap;
+    }
+}
