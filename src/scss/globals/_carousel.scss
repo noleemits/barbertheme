@@ -1,30 +1,61 @@
+@use '../util' as *;
+
 .swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal{
     bottom: 0 !important;
     top: auto;   
 }
 
 .swiper-button{
+    
     &-next::after, &-prev::after{
-        font-family: none;
-        content: url("~/src/images/content/slide-arrow.png");
-        filter: invert(100%) sepia(3%) saturate(13%) hue-rotate(81deg) brightness(106%) contrast(106%);    
-         background-size: contain;
-    transition: filter ease-in-out 0.3s;
-    transform: scale(43%);
+        display: none;
     }
-    &-next{
-        width: 55px;
-        right: 100px;
+    @include breakpoint(medium){
+        &-next::after, &-prev::after{
+            display: flex;
+            font-family: none;
+            content: url("~/src/images/content/slide-arrow.png");
+            filter: invert(100%) sepia(3%) saturate(13%) hue-rotate(81deg) brightness(106%) contrast(106%);    
+             background-size: contain;
+        transition: filter ease-in-out 0.3s;
+        transform: scale(43%);
+        }
+        &-next{
+            width: 55px;
+            right: 100px;
+        }
+        &-prev{ 
+            left: 100px;
+            transform: scaleX(-1);
+        }
+        &-next:hover::after, &-prev:hover::after{
+            filter: invert(24%) sepia(84%) saturate(6169%) hue-rotate(352deg) brightness(84%) contrast(102%);
+        }
     }
-    &-prev{
-        width: 55px;
-        left: 100px;
-        transform: scaleX(-1);
-    }
-    &-next:hover::after, &-prev:hover::after{
-        filter: invert(24%) sepia(84%) saturate(6169%) hue-rotate(352deg) brightness(84%) contrast(102%);
-    }
+    
 }
+
+// .swiper-button{
+//     &-next::after, &-prev::after{
+//         font-family: none;
+//         content: url("~/src/images/content/slide-arrow.png");
+//         filter: invert(100%) sepia(3%) saturate(13%) hue-rotate(81deg) brightness(106%) contrast(106%);    
+//          background-size: contain;
+//     transition: filter ease-in-out 0.3s;
+//     transform: scale(43%);
+//     }
+//     &-next{
+//         width: 55px;
+//         right: 100px;
+//     }
+//     &-prev{ 
+//         left: 100px;
+//         transform: scaleX(-1);
+//     }
+//     &-next:hover::after, &-prev:hover::after{
+//         filter: invert(24%) sepia(84%) saturate(6169%) hue-rotate(352deg) brightness(84%) contrast(102%);
+//     }
+// }
 
 
     .swiper-wrapper{
@@ -44,3 +75,5 @@
         background-image: url(~/src/images/content/hero02.jpg);
     }
 }
+
+
